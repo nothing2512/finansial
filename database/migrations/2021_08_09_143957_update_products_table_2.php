@@ -14,10 +14,7 @@ class UpdateProductsTable2 extends Migration
     public function up()
     {
         Schema::table("products", function (Blueprint $table) {
-            $table->dropColumn("price");
-            $table->bigInteger("parentId");
-            $table->integer("purchasePrice");
-            $table->integer("sellPrice");
+            $table->dropColumn("stock");
         });
     }
 
